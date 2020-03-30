@@ -55,6 +55,24 @@ public class Program {
 				}
 
 			} else if (resp == 2) {
+				
+			
+				if (addAnimalTerra.getAnimaisCaracteristica().size() > 0) {
+					for (int i = 0; i < addAnimalTerra.getAnimaisCaracteristica().size(); i++) {
+						System.out.println("O animal que você pensou " + addAnimalTerra.getAnimaisCaracteristica().get(i)
+								+ "?" + " Digite '1' para sim e '2' para não: ");
+						int animalNovo = sc.nextInt();
+						if (animalNovo == 1) {
+							System.out.println("É um " + addAnimalTerra.getAnimais().get(i) + "?" + " Digite '1' para sim e '2' para não: ");
+							int afirma = sc.nextInt();
+							if(afirma == 1) {
+								Animais.fim();
+							}
+							
+						}
+					}
+				}
+				
 				Animais.animalAguaNao();
 				int respTerra = sc.nextInt();
 
