@@ -19,13 +19,21 @@ public class AddAnimal {
 	public void setAnimais(List<String> animais) {
 		this.animais = animais;
 	}
+	
+	public List<String> getAnimaisCaracteristica() {
+		return animaisCaracteristica;
+	}
+
+	public void setAnimaisCaracteristica(List<String> animaisCaracteristica) {
+		this.animaisCaracteristica = animaisCaracteristica;
+	}
 
 	public void novoAnimal(String novoAnimal) {
 		animais.add(novoAnimal);
 		for(String w : animais) {
 			System.out.println(w);
 		}
-		System.out.println("Um(a) " + novoAnimal + ", mas um tubarão não");
+		System.out.println("Um(a) ____________" + novoAnimal + ", mas um tubarão não");
 	}
 	public void novoAnimalCaracteristica(String novoAnimalCaracteristica) {
 		animaisCaracteristica.add(novoAnimalCaracteristica);
