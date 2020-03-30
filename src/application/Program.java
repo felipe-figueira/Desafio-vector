@@ -93,7 +93,7 @@ public class Program {
 			}else {
 				continue;
 			}
-		} while (cont != 1000);
+		} while (cont != 100);
 
 		sc.close();
 	}
