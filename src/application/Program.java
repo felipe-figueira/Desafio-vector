@@ -24,16 +24,17 @@ public class Program {
 
 				if (addAnimal.getAnimaisCaracteristica().size() > 0) {
 					for (int i = 0; i < addAnimal.getAnimaisCaracteristica().size(); i++) {
-						System.out.println("O animal que você pensou " + addAnimal.getAnimaisCaracteristica().get(i)
+						System.out.print("O animal que você pensou " + addAnimal.getAnimaisCaracteristica().get(i)
 								+ "?" + " Digite '1' para sim e '2' para não: ");
 						int animalNovo = sc.nextInt();
 						if (animalNovo == 1) {
-							System.out.println("É um " + addAnimal.getAnimais().get(i) + "?" + " Digite '1' para sim e '2' para não: ");
+							System.out.print("É um " + addAnimal.getAnimais().get(i) + "?"
+									+ " Digite '1' para sim e '2' para não: ");
 							int afirma = sc.nextInt();
-							if(afirma == 1) {
+							if (afirma == 1) {
 								Animais.fim();
 							}
-							
+
 						}
 					}
 
@@ -46,7 +47,7 @@ public class Program {
 
 				} else if (resp2 == 2) {
 
-					System.out.println("Qual animal você pensou?");
+					System.out.print("Qual animal você pensou?");
 					String novoAnimal = sc.next();
 					addAnimal.novoAnimal(novoAnimal);
 					String novoAnimalCaracteristica = sc.next();
@@ -55,24 +56,25 @@ public class Program {
 				}
 
 			} else if (resp == 2) {
-				
-			
+
 				if (addAnimalTerra.getAnimaisCaracteristica().size() > 0) {
 					for (int i = 0; i < addAnimalTerra.getAnimaisCaracteristica().size(); i++) {
-						System.out.println("O animal que você pensou " + addAnimalTerra.getAnimaisCaracteristica().get(i)
-								+ "?" + " Digite '1' para sim e '2' para não: ");
+						System.out
+								.println("O animal que você pensou " + addAnimalTerra.getAnimaisCaracteristica().get(i)
+										+ "?" + " Digite '1' para sim e '2' para não: ");
 						int animalNovo = sc.nextInt();
 						if (animalNovo == 1) {
-							System.out.println("É um " + addAnimalTerra.getAnimais().get(i) + "?" + " Digite '1' para sim e '2' para não: ");
+							System.out.println("É um " + addAnimalTerra.getAnimais().get(i) + "?"
+									+ " Digite '1' para sim e '2' para não: ");
 							int afirma = sc.nextInt();
-							if(afirma == 1) {
+							if (afirma == 1) {
 								Animais.fim();
 							}
-							
+
 						}
 					}
 				}
-				
+
 				Animais.animalAguaNao();
 				int respTerra = sc.nextInt();
 
@@ -88,6 +90,8 @@ public class Program {
 
 				}
 
+			}else {
+				continue;
 			}
 		} while (cont != 1000);
 

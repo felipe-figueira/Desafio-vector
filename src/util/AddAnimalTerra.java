@@ -8,6 +8,6 @@ public class AddAnimalTerra extends AddAnimalAgua{
 		for(String w : animais) {
 			System.out.println(w);
 		}
-		System.out.println("Um(a) ____________" + novoAnimal + ", mas um macaco não");
+		System.out.print("Um(a) ____________" + novoAnimal + ", mas um macaco não: ");
 	}
 }

@@ -33,7 +33,7 @@ public class AddAnimalAgua {
 		for(String w : animais) {
 			System.out.println(w);
 		}
-		System.out.println("Um(a) ____________" + novoAnimal + ", mas um tubarão não");
+		System.out.print("Um(a) ____________" + novoAnimal + ", mas um tubarão não: ");
 	}
 	public void novoAnimalCaracteristica(String novoAnimalCaracteristica) {
 		animaisCaracteristica.add(novoAnimalCaracteristica);
