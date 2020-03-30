@@ -1,14 +1,14 @@
-package entities;
+package util;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddAnimal {
+public class AddAnimalAgua {
 	
-	private List<String> animais = new ArrayList<>();
+	protected List<String> animais = new ArrayList<>();
 	private List<String> animaisCaracteristica = new ArrayList<>();
 	
-	public AddAnimal() {
+	public AddAnimalAgua() {
 		
 	}
 	
